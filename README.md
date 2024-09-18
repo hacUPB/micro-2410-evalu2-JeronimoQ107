@@ -14,7 +14,7 @@ En esta actividad se realizaron 5 ejercicios en los que se profundiza sobre los 
 
 En el primer ejercicio se pide modificar un código para que los datos se copien a partir de la dirección 0x20000800. Además, se pide poner la dirección base como una constante simbólica y que los datos que se guarden sean a partir del número 50 y se incremente de 10 en 10 hasta el 140. La solución a este ejercicio se muestra a continuación:
 
-~~~x86asm
+~~~asm
 .syntax unified
 .global _start
 .text
