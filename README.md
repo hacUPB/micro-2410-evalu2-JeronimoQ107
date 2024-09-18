@@ -264,7 +264,7 @@ Las direcciones usadas para los puertos B y C están consignadas en la siguiente
 Falta aún por mostrar la tabla que representa la estrategia de definición de la máquina de estados, y que se ve de la misma manera que la tabla construida para la implementación de la máquina de estados del semáforo.
 
 <div align="center">
-    <img src="tablaFSM.png" alt="tabla" />
+    <img src="tablafsm.png" alt="tabla FSM" />
 </div>
 
 Hay que considerar que se deben hacer varias modificaciones a esta tabla, tales como los estados, añadir los registros PSOR y PCOR del puerto C, además de definir un elemento llamado __salida__ que no es más que una dirección de memoria en el que se cargarán los bits de salida, es decir, cada byte del .rodata _leds_, y que luego serán enviados a los registros PCOR y PSOR de cada puerto para poder mostrarlos en el módulo.
