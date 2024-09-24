@@ -14,7 +14,7 @@ En esta actividad se realizaron 5 ejercicios en los que se profundiza sobre los 
 
 En el primer ejercicio se pide modificar un código para que los datos se copien a partir de la dirección 0x20000800. Además, se pide poner la dirección base como una constante simbólica y que los datos que se guarden sean a partir del número 50 y se incremente de 10 en 10 hasta el 140. La solución a este ejercicio se muestra a continuación:
 
-~~~asm
+~~~assembly
 .syntax unified
 .global _start
 .text
@@ -45,7 +45,7 @@ En el segundo ejercicio se pide simplificar las líneas de código del programa,
 
 La función init que se presentaba en el código original era esencialmente inútil, pues los registros r0 y r1 serían modificados mediante un comando __mov__, por lo que se optó por eliminar la subrutina. Otro cambio que se realizó fue definir la dirección base como un .equ para una mayor legibilidad del código. Finalmente se modificó el contador de la subrutina __loop_copia__, pues no estaba funcionando correctamente.
 
-~~~x86asm
+~~~assembly
 .syntax unified
 .global _start
 .text
@@ -97,7 +97,7 @@ La imagen que se diseño es idéntica a la que su utilizó para la implementaci�
 
 El código que cumple con el objetivo de este ejercicio es el siguiente.
 
-~~~x86asm
+~~~assembly
 .syntax unified
 .global _start
 .text
@@ -138,7 +138,7 @@ leds:
 
 En el cuarto ejercicio se pide describir que es lo que hace el siguiente código:
 
-~~~x86asm
+~~~assembly
 .syntax unified
 .global _start
 .text
